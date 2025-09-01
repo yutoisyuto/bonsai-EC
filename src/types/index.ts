@@ -76,3 +76,51 @@ export interface LiveAuction {
   startTime: string;
   endTime: string;
 }
+
+export interface User {
+  id: string;
+  name: string;
+  email: string;
+  avatar: string;
+  memberSince: string;
+  totalSpent: number;
+  favoriteSpecies: string;
+}
+
+export interface UserBonsai {
+  id: string;
+  bonsai: Bonsai;
+  purchaseDate: string;
+  purchasePrice: number;
+  currentValue: number;
+  maintenanceRecords: MaintenanceRecord[];
+  ownershipHistory: OwnershipRecord[];
+  sellerInfo: SellerInfo;
+}
+
+export interface OwnershipRecord {
+  id: string;
+  ownerName: string;
+  startDate: string;
+  endDate?: string;
+  purchasePrice?: number;
+  notes?: string;
+}
+
+export interface SellerInfo {
+  name: string;
+  reputation: number; // 1-5 stars
+  totalSales: number;
+  memberSince: string;
+  speciality: string;
+  location: string;
+}
+
+export interface MaintenanceRecord {
+  id: string;
+  date: string;
+  type: 'watering' | 'pruning' | 'repotting' | 'fertilizing' | 'inspection';
+  notes: string;
+  technician: string;
+  photos?: string[];
+}

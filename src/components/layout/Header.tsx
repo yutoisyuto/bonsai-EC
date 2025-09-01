@@ -71,7 +71,7 @@ export default function Header() {
             <button className="text-white/80 hover:text-gold-400 transition-colors" aria-label="カート">
               <ShoppingCart size={20} />
             </button>
-            <Link href="/login" className="btn-secondary whitespace-nowrap">
+            <Link href="/dashboard" className="btn-secondary whitespace-nowrap">
               ログイン
             </Link>
             <Link href="/register" className="btn-primary whitespace-nowrap">
@@ -121,7 +121,7 @@ export default function Header() {
               お問い合わせ
             </Link>
             <div className="pt-4 space-y-3 px-6">
-              <Link href="/login" onClick={closeMenu} className="block btn-secondary text-center">
+              <Link href="/dashboard" onClick={closeMenu} className="block btn-secondary text-center">
                 ログイン
               </Link>
               <Link href="/register" onClick={closeMenu} className="block btn-primary text-center">
