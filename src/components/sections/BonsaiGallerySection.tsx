@@ -117,7 +117,7 @@ export default function BonsaiGallerySection() {
                     </div>
                     
                     {bonsai.status === 'available' && (
-                      <button className="flex items-center space-x-2 bg-gold-600 hover:bg-gold-700 text-white px-4 py-2 rounded-lg text-sm transition-colors">
+                      <button className="flex items-center space-x-2 bg-gold-600 hover:bg-gold-700 text-white px-4 py-2 rounded-lg text-sm transition-colors whitespace-nowrap">
                         <ShoppingCart size={16} />
                         <span>購入</span>
                       </button>
